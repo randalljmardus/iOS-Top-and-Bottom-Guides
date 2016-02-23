@@ -24,7 +24,15 @@ class ViewController: UIViewController {
         
         box.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor).active = true
     
-    
+    let blueBox = UIView()
+        blueBox.backgroundColor = UIColor.blueColor()
+        blueBox.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(blueBox)
+        
+        blueBox.widthAnchor.constraintEqualToConstant(200).active = true
+        blueBox.heightAnchor.constraintEqualToConstant(100).active = true
+        blueBox.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
+        blueBox.bottomAnchor.constraintEqualToAnchor(bottomLayoutGuide.topAnchor).active = true
     
     
     
