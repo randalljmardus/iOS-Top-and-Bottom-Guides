@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         box.widthAnchor.constraintEqualToConstant(200).active = true
         box.heightAnchor.constraintEqualToConstant(100).active = true
         
-        
+        box.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor).active = true
+    
     
     
     
